@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      body {
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+  background-image: url("/household-appliance-in-cardboard-boxes-on-conveyor-2021-08-26-16-57-05-utc\ 1.webp");  
+  background-size: cover; 
+
+      }
+
+      .fixed-nav-bar {
+        align-items: flex-end;
+        background-color: #ec642b;
+        height: 80px;
+        justify-content: flex-end;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+      }
+
+      .contenedorGrande1 {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30vh;
+        margin-right: 16vh;
+      }
+      .cajaUnica {
+        width: 700px;
+        height: 500px;
+        background-color: white;
+        border-radius: 30px;
+      }
+
+      .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+/* formularios de columnas */
+ .contenedorFormulario{
+ }
+    
+ .campos{
+display: flex;
+justify-content: space-evenly;
+margin-bottom: 3vh;
+ }
+
+ .columna1{
+ }
+
+ .columna2{
+ }
+input{
+  border-radius: 20px;
+ margin: 5px;
+  padding: 0.5vh;
+    border: solid 2px;
+    border-color: #EC642B;
+
+  
+}
+
+
+.cajitas{
+  margin: 3vw;
+}
+
+.botonEnviar{
+  margin-left:44%;
+}
+
+      hr{
+  width: 90%;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: #EC642B;
+}
+
+a {
+  color: #EC642B;
+  text-decoration: none;
+}
+
+h3{
+  color: #EC642B;
+}
+
+
+
+/* MEDIAQUERI */
+
+@media (max-width: 600px) {
+  .contenedorGrande1{
+    display: flex;
+    margin-right: 0;
+  }
+.cajaUnica{
+  height: 90vh;
+}
+  .campos{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+  
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="fixed-nav-bar">
+      <img class="logoExpertNav" src="./logo expert 1.png" />
+    </div>
+    <div class="contenedorGrande1">
+      <div class="cajaUnica">
+        <div class="contenido">
+          <!-- icono -->
+          <img src="./logo expert 1.png" />
+          <hr />
+          <!-- barra -->
+          <h3>Rellena el formulario</h3>
+          <!-- barra -->
+          <hr />
+          <!-- formulario --> 
+          <!-- un formulario (FORM) dividido en dos divs -->
+          <div class="contenedorFormulario">
+          <form action="">
+            <div class="campos">
+              <div class="columna1">
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre" /><br />
+              <input type="text" id="lname" name="lname" placeholder="Apellidos"/><br />
+              <input type="text" id="nombre" name="nombre"placeholder="Correo" /><br />
+            </div>
+<div class="columna2">
+              <input type="text" id="lname" name="lname" placeholder="Teléfono"/><br />
+              <input type="text" id="nombre" name="nombre" placeholder="Electrodoméstico"/><br />
+              <input type="text" id="lname" name="lname"placeholder="Presupuesto" /><br />
+            </div>
+            </div>
+<div class="cajitas">
+                <input type="checkbox" id="politica" name="politica" value="politica">
+              <label for="politica"> Sí, estoy deacuerdo en que Expert España (Agrupación detallistas electrod. Federal FADESA, SA) trate mis datos para los fines indicados en la<a href="https://www.expert.es/"> política de privacidad</a>.</label><br>
+              <input type="checkbox" id="recibir" name="recibir" value="recibir">
+              <label for="recibir"> Si, estoy deacuerdo en recibir comunicaciones comerciales de la web <a href="https://www.expert.es/">www.expert.es</a>, propiedad de que Expert España (Agrupaciñon detallistas electrod. Federal FADESA, S.A).</label><br>
+              <input type="submit" class="botonEnviar" value="Enviar" />
+
+            </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+  </body>
+</html>
